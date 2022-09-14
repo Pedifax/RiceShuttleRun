@@ -1,6 +1,8 @@
 # Rice Shuttle Run!
 
-### Link to the Game : [click me](https://riceshuttlerun.surge.sh/)
+### A simple game written in Javascript
+
+##### Link to the Game : [click me](https://riceshuttlerun.surge.sh/)
 
 ### Suggested Environment
 
