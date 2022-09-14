@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.margin_auto {
+  margin: auto;
+}
+
+#window {
+  height: 900px;
+  width: 600px;
+  border: 2px solid rgb(220, 213, 213);
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.257);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#bus_image {
+  height: 150px;
+}
+
+.bus_position_left {
+  top: 750px;
+  width: 200px;
+  height: 150px;
+  left: -200px;
+  position: relative;
+  margin: auto;
+}
+
+.bus_position_middle {
+  top: 750px;
+  width: 200px;
+  height: 150px;
+  left: 0px;
+  position: relative;
+  margin: auto;
+}
+
+.bus_position_right {
+  top: 750px;
+  width: 200px;
+  height: 150px;
+  left: 200px;
+  position: relative;
+  margin: auto;
+}
+
+.normal_mode {
+  top: -150px;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  animation-name: enemy_slide;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes enemy_slide {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 600px;
+  }
+}
+
+.hard_mode {
+  top: -150px;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  animation-name: enemy_slide_hard;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes enemy_slide_hard {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 600px;
+  }
+}
+
+.crazy_mode {
+  top: -150px;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  animation-name: enemy_slide_crazy;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes enemy_slide_crazy {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 600px;
+  }
+}
+
+.enemy_div_position_left {
+  left: 0px;
+}
+
+.enemy_div_position_middle {
+  left: 200px;
+}
+
+.enemy_div_position_right {
+  left: 400px;
+}
+
+.buttons_area {
+  margin: auto;
+  width: 600px;
+}
+
+.control_buttons {
+  margin: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.257);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  border: 2px solid rgb(220, 213, 213);
+}
+
+.control_buttons:hover {
+  background-color: rgba(17, 238, 242, 0.893);
+  backdrop-filter: blur(200px);
+  filter: blur();
+}
+
+.arrow_icon {
+  width: 300px;
+  height: 200px;
+}
+
+#left_button {
+  width: 100%;
+}
+
+#right_button {
+  width: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #f12062 0%, #ae1dde 100%);
+}
+
+.score_board {
+  font-size: 2.6rem;
+  color: #e0e2d3ee;
+  font-weight: 200;
+  text-align: center;
+}
+
+#highest_score {
+  font-weight: 400;
+  color: #e9f509;
+}
+
+.noselect {
+  /* from stackoverflow */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rice Shuttle Run!</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Bang-Yen Kao" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="flex grid grid-col-10">
+      <div class="game_area col-span-7">
+        <!-- (Area 1) -->
+        <div id="window">
+          <img
+            class="bus_position_left"
+            id="bus"
+            src="./images/bus.png"
+            draggable="false"
+          />
+
+          <div id="enemy_div" class="normal_mode enemy_div_position_middle">
+            <img
+              id="bus_img"
+              src="./images/enemy.png"
+              class="noselect margin_auto"
+              draggable="false"
+            />
+          </div>
+        </div>
+
+        <div>
+          <div class="buttons_area flex justify-around">
+            <div
+              class="control_buttons rounded-xl px-7 py-5 cursor-pointer"
+              id="left_button"
+            >
+              <img
+                src="./images/left-arrow.png"
+                class="arrow_icon noselect"
+                draggable="false"
+              />
+            </div>
+            <div
+              class="control_buttons rounded-xl px-7 py-5 cursor-pointer"
+              id="right_button"
+            >
+              <img
+                src="./images/right-arrow.png"
+                class="arrow_icon noselect"
+                draggable="false"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-start-8 col-span-2">
+        <!-- (Area 2) -->
+        <span id="score-board" class="score_board">
+          <div>
+            Highest Score:
+            <a id="highest_score">0</a>
+          </div>
+          <div>Current Score: <a id="current_score">0</a></div>
+          <div>Button Clicks: <a id="button_click">0</a></div>
+          <div>All-Time Button Clicks: <a id="all_time_button_click">0</a></div>
+        </span>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
